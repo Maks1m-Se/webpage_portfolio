@@ -2527,19 +2527,18 @@
 		}
 
 		.spotlight:nth-child(1) {
+			background-color: rgba(3, 57, 166, 0.55);
+		}
+		.spotlight:nth-child(2) {
 			background-color: rgba(242, 65, 80, 0.875);
 		}
 
-		.spotlight:nth-child(2) {
-			background-color: rgba(33, 39, 30, 0.753);
-		}
-
 		.spotlight:nth-child(3) {
-			background-color: rgba(201, 67, 192, 0.488);
+			background-color: rgba(31, 38, 32, 0.75);
 		}
 
 		.spotlight:nth-child(4) {
-			background-color: rgba(28, 81, 186, 0.879);
+			background-color: rgba(163, 3, 166, 0.55);
 		}
 
 		.spotlight:nth-child(5) {
