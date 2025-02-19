@@ -41,6 +41,7 @@
 					</header>
 
 				<!-- Banner -->
+					<!--
 					<section id="banner">
 						<div class="inner">
 							<h2>Maksim</h2>
@@ -53,6 +54,36 @@
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
 					</section>
+					-->
+					<section id="banner">
+						<div class="inner">
+							<h2>Maksim</h2>
+							<br/><br/>
+							<p id="random-quote">Loading wisdoms...</p> <!-- ID added for JavaScript -->
+							<script>
+								// JavaScript code directly inside the HTML file
+								document.addEventListener("DOMContentLoaded", function() {
+									fetch('quotes.json')
+										.then(response => response.json())
+										.then(data => {
+											let quotes = data.quotes;
+											let randomIndex = Math.floor(Math.random() * quotes.length);
+											document.getElementById("random-quote").innerHTML = quotes[randomIndex];
+										})
+										.catch(error => console.error("Error loading quotes:", error));
+								});
+							</script>
+							<br/><br/>
+							<ul class="actions">
+								<li><a href="#" class="button special">Activate</a></li>
+							</ul>
+						</div>
+
+
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
+					
+					
 
 				<!-- One -->
 					<section id="one" class="wrapper style1 special">
