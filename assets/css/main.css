@@ -2527,7 +2527,7 @@
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: rgba(3, 57, 166, 0.55);
+			background-color: rgba(93, 159, 217, 0.85);
 		}
 		.spotlight:nth-child(2) {
 			background-color: rgba(242, 65, 80, 0.875);
@@ -2542,11 +2542,11 @@
 		}
 
 		.spotlight:nth-child(5) {
-			background-color: rgba(0, 0, 0, 0.375);
+			background-color: rgba(0, 50, 0, 0.375);
 		}
 
 		.spotlight:nth-child(6) {
-			background-color: rgba(0, 0, 0, 0.45);
+			background-color: rgba(40, 100, 200, 0.85);
 		}
 
 		.spotlight:nth-child(7) {
