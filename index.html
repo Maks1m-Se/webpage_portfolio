@@ -270,9 +270,16 @@
       </li>
 
       <li class="icon fa-envelope-o">
-        <h3><a href="mailto:yourname@gmail.com?subject=Portfolio%20Inquiry" aria-label="Send me an email">Contact</a></h3>
-        <p>Say hi — I’m open to feedback and ideas.</p>
-      </li>
+		<h3>
+			<a id="email-link"
+   href="mailto:maksim_sendetski@live.de?subject=Portfolio%20Inquiry&amp;body=Hi%20Maksim,%0D%0A%0D%0AI%20saw%20your%20portfolio%20and%20wanted%20to%20get%20in%20touch..."
+   aria-label="Send me an email">
+  Contact
+</a>
+		</h3>
+		<p>Say hi — I’m open to feedback and ideas.</p>
+		</li>
+
     </ul>
   </div>
 </section>
@@ -345,7 +352,14 @@
 						<ul class="icons">
 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="mailto:yourname@gmail.com?subject=Portfolio%20Inquiry" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							<li>
+								<a href="#" id="email-link" class="icon fa-envelope-o"><span class="label">Email</span></a>
+								<script>
+								document.getElementById("email-link").addEventListener("click", function() {
+									window.location.href = "mailto:" + "maksim_sendetski" + "@" + "live.de";
+								});
+								</script>
+							</li>
 						</ul>
 						<ul class="copyright">
 							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
@@ -364,6 +378,15 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				document.getElementById("email-link").addEventListener("click", function (e) {
+					e.preventDefault(); // prevent # link scroll
+					window.location.href = "mailto:" + "maksim_sendetski" + "@" + "live.com"
+					+ "?subject=Portfolio%20Inquiry"
+					+ "&body=Hi%20Maksim,%0D%0A%0D%0AI%20saw%20your%20portfolio%20and%20wanted%20to%20get%20in%20touch...";
+				});
+			</script>
 
 	</body>
 </html>
